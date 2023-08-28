@@ -91,7 +91,7 @@ export default function index() {
             <Magnetic>
               <div className={styles.el}>
                 <a
-                  href='https://www.linkedin.com/in/arshali2774/'
+                  href='https://github.com/arshali2774/'
                   target='_blank'
                   rel='noreferrer'
                   style={{ color: 'white', textDecoration: 'none' }}
