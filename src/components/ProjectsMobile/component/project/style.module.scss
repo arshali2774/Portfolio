@@ -1,0 +1,101 @@
+.project {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  padding: 50px 10px 50px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  h2 {
+    font-size: 60px;
+    margin: 0px;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 426px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  p {
+    transition: all 0.4s;
+    font-weight: 300;
+    padding-top: 0.5rem;
+  }
+  @media screen and (max-width: 426px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &:last-of-type {
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
+
+  &:hover {
+    opacity: 0.5;
+
+    h2 {
+      transform: translateX(-10px);
+    }
+
+    p {
+      transform: translateX(10px);
+    }
+  }
+  .modalContainer {
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+    margin-bottom: 1rem;
+  }
+
+  .modalSlider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal img {
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .cursor,
+  .cursorLabel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #d7aba4;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    pointer-events: none;
+  }
+
+  .cursorLabel {
+    background-color: transparent;
+  }
+}
