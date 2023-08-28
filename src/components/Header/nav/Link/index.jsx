@@ -3,7 +3,13 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../animation';
 
-export default function Index({ data, isActive, setSelectedIndicator }) {
+export default function Index({
+  data,
+  active,
+  setSelectedIndicator,
+  isActive,
+  setIsActive,
+}) {
   const { title, href, index } = data;
 
   return (
@@ -20,10 +26,15 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
     >
       <motion.div
         variants={scale}
-        animate={isActive ? 'open' : 'closed'}
+        animate={active ? 'open' : 'closed'}
         className={styles.indicator}
       ></motion.div>
-      <a href={href}>{title}</a>
+      <a
+        href={href}
+        onClick={() => setIsActive(false)}
+      >
+        {title}
+      </a>
     </motion.div>
   );
 }
