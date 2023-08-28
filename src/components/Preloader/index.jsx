@@ -13,7 +13,7 @@ const words = [
   'Hallå',
   'Guten tag',
   'Hallo',
-  'Inspired By Dennis Snellenberg',
+  'Inspired By Dennis Snellenberg ',
 ];
 
 export default function Index() {

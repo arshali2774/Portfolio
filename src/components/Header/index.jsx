@@ -33,7 +33,6 @@ export default function index() {
         trigger: document.documentElement,
         start: 0,
         end: `${window.innerHeight}`,
-        markers: true,
         onLeave: () => {
           gsap.to(button.current, {
             scale: 1,
