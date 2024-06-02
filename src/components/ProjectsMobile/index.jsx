@@ -15,6 +15,13 @@ const projects = [
     link: 'https://comfysloth2023-ecommerce.netlify.app/',
   },
   {
+    title: 'Comfy Store',
+    src: 'ComfyStore.png',
+    color: '#282a36',
+    tech: 'React.js, React Router Dom, React Query, Redux Toolkit',
+    link: 'https://comfy-store-ecommerce.netlify.app/',
+  },
+  {
     title: 'Jobster',
     src: 'jobster.png',
     color: '#8C8C8C',
