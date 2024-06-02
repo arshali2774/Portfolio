@@ -16,8 +16,8 @@ const projects = [
   },
   {
     title: 'Comfy Store',
-    src: 'comfy.png',
-    color: '#000000',
+    src: 'ComfyStore.png',
+    color: '#282a36',
     tech: 'React.js, React Router Dom, React Query, Redux Toolkit',
     link: 'https://comfy-store-ecommerce.netlify.app/',
   },
