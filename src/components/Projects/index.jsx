@@ -9,7 +9,7 @@ import Rounded from '../../components/RoundedButton/index';
 const projects = [
    {
     title: 'Task Manager (Drag N Drop)',
-    src: 'comfy.png',
+    src: 'task-manager.png',
     color: '#b387fa',
     tech: 'MERN stack, TanStack Query, Redux Toolkit, PassportJS',
     link: 'https://task-manager-voosh-project.netlify.app/',
